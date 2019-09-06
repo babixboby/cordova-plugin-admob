@@ -35,7 +35,7 @@
             <uses-permission android:name="android.permission.INTERNET"/>
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
           </config-file>
-
+<framework src="com.google.android.gms:play-services-ads:9.8.0" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdMob">
                 <param name="android-package" value="com.rjfun.cordova.plugin.AdMob"/>
@@ -45,7 +45,7 @@
         <source-file src="src/android/AdMob.java" target-dir="src/com/rjfun/cordova/plugin" />
 
         <!-- cordova CLI using gradle and it's working well -->
-	    <framework src="com.google.android.gms:play-services-ads:9.8.0" />
+	    
     
         <!-- but unfortunately, build.phonegap.com, Intel XDK, and some other tools still use ant -->
         <!-- dependency id="cordova-plugin-googleplayservices"/ -->
